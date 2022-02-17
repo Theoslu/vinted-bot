@@ -147,6 +147,10 @@ client.on('ready', () => {
     });
     db.set('is_first_sync', true);
 
+    const messages = [
+        `🕊️ \n`,
+        `🤟 \n`
+    ];
     let idx = 0;
     const donate = () => console.log(messages[ idx % 2 ]);
     setTimeout(() => {
